@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💌 My Love Letter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="bg-floaties" id="bgFloaties"></div>
+
+  <div class="scene" id="scene">
+
+    <div class="envelope" id="envelope" onclick="openEnvelope()">
+      <div class="env-flap" id="envFlap"></div>
+      <div class="env-body">
+        <div class="env-seal" id="envSeal">💌</div>
+        <div class="env-hint">tap to open</div>
+      </div>
+      <div class="env-cat">🐱</div>
+      <div class="env-dog">🐶</div>
+      <div class="env-tulip-l">🌷</div>
+      <div class="env-tulip-r">🌷</div>
+    </div>
+
+    <div class="letter" id="letter">
+      <div class="letter-inner">
+
+        <div class="deco-row">
+          <span class="tulip">🌷</span>
+          <span class="tulip">🌷</span>
+          <span class="tulip">🌷</span>
+          <span class="heart-deco">💕</span>
+          <span class="tulip">🌷</span>
+          <span class="tulip">🌷</span>
+          <span class="tulip">🌷</span>
+        </div>
+
+        <h1 class="letter-title">A letter for you, baby 💌</h1>
+
+        <div class="paw-divider">🐾 🐾 🐾</div>
+
+        <div class="letter-body" id="letterBody">
+          <p id="letterText"></p>
+        </div>
+
+        <button class="reveal-btn" id="revealBtn" onclick="revealNext()">
+          Read More 💗
+        </button>
+
+        <div class="signature" id="signature" style="display:none">
+          <div class="pets-row">
+            <div class="pet-card">
+              <div class="pet-emoji">🐱</div>
+              <div class="pet-label">Kitty says meow!</div>
+            </div>
+            <div class="heart-big">💖</div>
+            <div class="pet-card">
+              <div class="pet-emoji">🐶</div>
+              <div class="pet-label">Puppy wags tail!</div>
+            </div>
+          </div>
+          <p class="sign-off">Forever & always yours,<br/><span class="sign-name">Your Secret Admirer 🌷</span></p>
+
+          <div class="petal-game">
+            <p class="petal-title">Pick a tulip! 🌷</p>
+            <div class="petals-row" id="petalsRow">
+              <span class="petal-btn" onclick="pickPetal(this)">🌷</span>
+              <span class="petal-btn" onclick="pickPetal(this)">🌷</span>
+              <span class="petal-btn" onclick="pickPetal(this)">🌷</span>
+              <span class="petal-btn" onclick="pickPetal(this)">🌷</span>
+              <span class="petal-btn" onclick="pickPetal(this)">🌷</span>
+            </div>
+            <p class="petal-msg" id="petalMsg"></p>
+          </div>
+
+          <button class="close-btn" onclick="closeAll()">💌 Fold it back up</button>
+        </div>
+
+        <div class="deco-row bottom-deco">
+          <span>🌷</span><span>🐾</span><span>💕</span><span>🐾</span><span>🌷</span>
+        </div>
+      </div>
+    </div>
+
+  </div><script src="script.js"></script>
+</body>
+</html>
